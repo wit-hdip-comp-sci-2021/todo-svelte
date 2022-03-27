@@ -1,8 +1,12 @@
 <script>
-  let todoText;
+  let todoText = "";
+  let todoItems = [];
 
   function addTodo() {
     console.log(todoText)
+    todoItems.push(todoText);
+    todoItems = [...todoItems];
+    todoText = "";
   }
 </script>
 
@@ -25,5 +29,20 @@
         <button on:click={addTodo} class="button">Add Todo</button>
       </div>
     </div>
+  </div>
+  <div class="section box">
+    <div class="title is-6">Things yet do</div>
+    <table class="table is-fullwidth">
+      <thead>
+        <th>Task</th>
+      </thead>
+      <tbody>
+        {#each todoItems as todo}
+          <tr>
+            <td> {todo} </td>
+          </tr>
+        {/each}
+      </tbody>
+    </table>
   </div>
 </div>
