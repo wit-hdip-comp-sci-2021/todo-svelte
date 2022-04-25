@@ -4,7 +4,7 @@
 </script>
 
 <div class="section box">
-  <div class="title is-6">Things yet do</div>
+  <div class="title is-6">{caption}</div>
   <table class="table is-fullwidth">
     <thead>
       <th>Task</th>
