@@ -45,5 +45,6 @@
       </div>
     </div>
   </div>
-  <TodoList todoItems="{todoItems}"/>
+  <TodoList caption="Items Todo" items="{todoItems}"/>
+  <TodoList caption="Items Done" items="{doneItems}"/>
 </div>

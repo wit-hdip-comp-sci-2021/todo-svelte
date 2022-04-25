@@ -1,5 +1,6 @@
 <script>
-  export let todoItems = [];
+  export let caption;
+  export let items = [];
 </script>
 
 <div class="section box">
@@ -11,10 +12,10 @@
       <th></th>
     </thead>
     <tbody>
-      {#each todoItems as todo}
+      {#each items as todo}
         <tr>
           <td> {todo.text} </td>
-          <td> {todo.date} </td>
+          <td> {todo.date}</td>
         </tr>
       {/each}
     </tbody>
